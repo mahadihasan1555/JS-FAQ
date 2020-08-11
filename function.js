@@ -1,3 +1,5 @@
+// WHEN TO USE A FUNCTION, FUNCTION INSIDE AN ARRAY
+
 nums = [2, 23, 52, 22, 64, 52, 64, 87];
 
 for (let i = 0; i < nums.length; i++) {
@@ -66,4 +68,14 @@ function evenify(nums) {
 nums = [32, 55, 3, 4, 56, 23, 56];
 evenify(nums);
 
+//When to return from a function and from where
 
+function evenify(num) {
+    if (num % 2 == 0) {
+        console.log(num, ": is even number");   
+    }else{
+        console.log(num * 2, ": is odd number" );
+    }
+}
+
+evenify(5);
